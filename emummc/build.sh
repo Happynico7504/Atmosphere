@@ -2,7 +2,7 @@
 
 set -e
 
-git clone https://github.com
+git clone https://github.com/SciresM/hactool.git
 cd hactool
 cp config.mk.template config.mk
 make
