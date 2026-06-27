@@ -20,7 +20,7 @@ namespace ams::nxboot {
 
     namespace {
 
-        constexpr inline auto SdCardPort = sdmmc::Port_SdCard0;
+        constexpr inline auto SdCardPort = sdmmc::Port_Mmc0;
 
         constexpr inline const uintptr_t APB = secmon::MemoryRegionPhysicalDeviceApbMisc.GetAddress();
 
