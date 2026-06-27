@@ -1,4 +1,4 @@
-name: Build CI
+name: Fusee CI
 
 on:
   workflow_dispatch:
