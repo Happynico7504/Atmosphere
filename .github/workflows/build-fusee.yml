@@ -15,10 +15,11 @@ jobs:
     - run: |
            cd fusee
            make -j8
+           tar -c out | gzip -9 > fusee.tar.gz
 
     - name: Upload Binary
       uses: actions/upload-artifact@v4
       with:
         name: package
         path: |
-              fusee/fusee.bin
+              fusee/fusee.tar.gz
