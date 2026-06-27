@@ -61,10 +61,11 @@ int nx_sd_init_retry(bool power_cycle)
 		type = SDHCI_TIMING_UHS_SDR104;
 		break;
 	default:
+		bus_width = SDMMC_BUS_WIDTH_8;
 		sd_mode = SD_UHS_SDR104;
 	}
 
-	return sdmmc_storage_init_sd(&sd_storage, &sd_sdmmc, bus_width, type);
+	return sdmmc_storage_init_mmc(&sd_storage, &sd_sdmmc, bus_width, type);
 }
 
 bool nx_sd_initialize(bool power_cycle)
