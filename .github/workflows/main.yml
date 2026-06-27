@@ -14,6 +14,7 @@ jobs:
     
     - run: |
            cd emummc
+           chmod 755 build.sh
            ./build.sh
 
     - name: Upload Binary
